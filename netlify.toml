@@ -1,0 +1,19 @@
+[build]
+  command = "make"
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+
+# - CORS header for WKD, https://metacode.biz/openpgp/web-key-directory
+# - use application/octet-stream for data as defined in the WKD standard
+[[headers]]
+  for = "/.well-known/openpgpkey/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/octet-stream"
