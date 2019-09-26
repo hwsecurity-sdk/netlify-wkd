@@ -76,8 +76,8 @@ def zb32_encode(data):
     return output
 
 def main(src, relDst):
-    wellKnownDst = relDst + "/.well-known/"
-    keysDst = wellKnownDst + "openpgpkey/hu/"
+    wellKnownDst = relDst + "/.well-known/openpgpkey/"
+    keysDst = wellKnownDst + "hu/"
     policyFile = wellKnownDst + "policy"
     os.makedirs(keysDst, exist_ok=True)
 
