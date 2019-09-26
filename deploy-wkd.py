@@ -75,8 +75,8 @@ def zb32_encode(data):
     output = output[:int((databits + 5 - 1) / 5)]
     return output
 
-def main(src, relDst):
-    wellKnownDst = relDst + "/.well-known/openpgpkey/"
+def main(src, relDst, domain):
+    wellKnownDst = relDst + "/.well-known/openpgpkey/" + domain + "/"
     keysDst = wellKnownDst + "hu/"
     policyFile = wellKnownDst + "policy"
     os.makedirs(keysDst, exist_ok=True)
@@ -98,10 +98,10 @@ def main(src, relDst):
         os.rename(os.path.join(keysDst, filename), os.path.join(keysDst, zb32Filename))
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3 or len(sys.argv) > 3:
-        sys.stdout.write("usage: %s <keys-dir> <destination-for-well-known>\n"
+    if len(sys.argv) < 4 or len(sys.argv) > 4:
+        sys.stdout.write("usage: %s <keys-dir> <destination-for-well-known> <domain>\n"
                          % sys.argv[0])
         sys.exit(1)
-    if len(sys.argv) == 3:
-        main(sys.argv[1], sys.argv[2])
+    if len(sys.argv) == 4:
+        main(sys.argv[1], sys.argv[2], sys.argv[3])
 
