@@ -11,3 +11,7 @@
 
 # Verify
 Unfortunately, https://metacode.biz/openpgp/web-key-directory currently does not support the openpgpkey subdomain.
+
+You can check out our deployment:
+* https://openpgpkey.cotech.de/.well-known/openpgpkey/cotech.de/policy
+* dominik@cotech.de : https://openpgpkey.cotech.de/.well-known/openpgpkey/cotech.de/hu/i4spe47w9w9i1wncq7tpum5m4b81bko9
