@@ -10,7 +10,7 @@
 7. Enable TLS using Let's Encrypt in Netlify's domain management
 
 # Verify
-Unfortunately, https://metacode.biz/openpgp/web-key-directory currently does not support the openpgpkey subdomain.
+Unfortunately, https://metacode.biz/openpgp/web-key-directory currently does not support the "advanced method" using the openpgpkey subdomain.
 
 You can check out our deployment:
 * https://openpgpkey.cotech.de/.well-known/openpgpkey/cotech.de/policy
