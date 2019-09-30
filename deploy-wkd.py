@@ -12,7 +12,7 @@
 """
 deploy-wkd
 
-Generate contents of /.well-known/openpgpkey/hu/ for OpenPGP Web Key Service
+Generate the OpenPGP Web Key Directory (WKD) using the "Advanced method"
 """
 
 import sys
