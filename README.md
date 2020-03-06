@@ -1,3 +1,5 @@
+**Deprecation notice**: We don't use Netlify for WKD anymore, so this repository is no longer maintained. Check out the [WKD as a Service](https://keys.openpgp.org/about/usage#wkd-as-a-service) functionality on keys.openpgp.org for an alternative.
+
 # Web Key Directory (WKD) for Netlify
 
 1. Fork this repo
